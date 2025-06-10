@@ -1,0 +1,463 @@
+
+@font-face {
+  font-family: 'VCR_MONO';     /* Nome da fonte */
+  src: url('fonts/VCR_OSD_MONO_1.001.ttf') format('truetype'); /* Caminho para o arquivo da fonte */
+}
+
+@font-face {
+  font-family: 'Undertale_Font'; /* Nome da fonte */
+  src: url('fonts/determination-max.otf') format('truetype'); /* Caminho para o arquivo da fonte */
+}
+
+@font-face {
+  font-family: 'Adult_Swim'; /* Nome da fonte */
+  src: url('fonts/Adult-Swim-Font.ttf') format('truetype'); /* Caminho para o arquivo da fonte */
+}
+
+@font-face {
+  font-family: 'RPGFont'; /* Nome da fonte */
+  src: url('fonts/RPGSystem.ttf') format('truetype'); /* Caminho para o arquivo da fonte */
+}
+
+
+body {
+    background: #dfdce3;
+    color: #202020;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+
+
+.caixa-principal {
+    
+    top: -100px;
+    left: 320px;
+
+    padding: 140px 40px;
+    margin: 20px;
+    
+    
+    justify-content: center;/* alinha na horizontal */
+    align-items: center;  /* alinha na vertical */
+    height: 450vh;
+    width: 780px;
+    position: absolute;
+    border-style: solid;
+    text-align: center;
+    
+
+    background: rgba(115, 115, 119, 0.933);
+    color: #202020;
+    font-family: 'Adult_Swim';
+
+    
+}
+
+.caixa-raiko {
+  margin: 30px;
+  padding: 200px 120px;
+  height: 3vh;
+  width: 300px;
+  position: absolute;
+  place-items: center;
+
+  top: 60%;
+  left: 30%;
+  
+
+  font-size: medium;
+  border-style: groove;
+  border-color: #6f2eac;
+  
+  overflow: hidden;
+  z-index: 2;
+  
+
+
+}
+
+.caixa-raiko::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 120%;
+
+  background-image: url(imagens/e6a74b274227312a9916e799e7672e1f.png);
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.7; 
+  z-index: -1; 
+}
+
+.caixa-william {
+  margin: 30px;
+  padding: 200px 120px;
+  height: 4vh;
+  width: 300px;
+  position: absolute;
+  place-items: center;
+
+  top: 120%;
+  left: 30%;
+  
+
+  font-size: medium;
+  border-style: groove;
+  border-color: #a21ab4;
+  
+  overflow: hidden;
+  z-index: 2;
+  
+
+
+}
+
+.caixa-william::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 120%;
+
+  background-image: url(imagens/WilliamBG.jpg);
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.7; 
+  z-index: -1; 
+}
+
+.titulo-william {
+  color: #ffffff;
+}
+
+.caixa-satoshi {
+  margin: 30px;
+  padding: 200px 120px;
+  height: 4vh;
+  width: 300px;
+  position: absolute;
+  place-items: center;
+
+  top: 180%;
+  left: 30%;
+  
+  color: #cecccc;
+  font-size: medium;
+  border-style: groove;
+  border-color: #cecccc;
+  
+  overflow: hidden;
+  z-index: 2;
+  
+
+
+}
+
+.caixa-satoshi::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background-image: url(imagens/SatoshiBG2.jpg);
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.7; 
+  z-index: -1; 
+}
+
+.caixa-mary {
+  margin: 30px;
+  padding: 200px 120px;
+  height: 4vh;
+  width: 300px;
+  position: absolute;
+  place-items: center;
+
+  top: 240%;
+  left: 30%;
+  
+  color: #cecccc;
+  font-size: medium;
+  border-style: groove;
+  border-color: #b88cb5;
+  
+  overflow: hidden;
+  z-index: 2;
+  
+
+
+}
+
+.caixa-mary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background-image: url(imagens/maryGif.gif);
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.7; 
+  z-index: -1; 
+
+}
+
+.caixa-hank {
+  margin: 30px;
+  padding: 200px 120px;
+  height: 4vh;
+  width: 300px;
+  position: absolute;
+  place-items: center;
+
+  top: 300%;
+  left: 30%;
+  
+  color: #cecccc;
+  font-size: medium;
+  border-style: groove;
+  border-color: #5c9ad4;
+  
+  overflow: hidden;
+  z-index: 2;
+  
+
+
+}
+
+.caixa-hank::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 125%;
+
+  background-image: url(imagens/HankBG.jpg);
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.7; 
+  z-index: -1; 
+
+}
+
+.caixa-kitsune {
+  margin: 30px;
+  padding: 200px 120px;
+  height: 4vh;
+  width: 300px;
+  position: absolute;
+  place-items: center;
+
+  top: 360%;
+  left: 30%;
+  
+  color: #cecccc;
+  font-size: medium;
+  border-style: groove;
+  border-color: #f50404;
+  
+  overflow: hidden;
+  z-index: 2;
+  color: #551919;
+
+
+}
+
+.caixa-kitsune::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 125%;
+
+  background-image: url(imagens/KitsuneBG.jpg);
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.7; 
+  z-index: -1; 
+  
+
+}
+
+
+
+
+.imagem-conectado {
+    justify-content: space-between;
+    width: 190px;
+    height: 200px;
+    transition: 0.5s;
+    
+
+}
+
+
+.Logo {
+    
+    top: 175px;
+    left: 460px;
+    opacity: 0.8;
+    width: 100px;
+    height: 100px;
+    max-width: 300px;
+}
+
+img {
+    padding: -200px;
+    margin: -90px;
+    align-items: left;
+    position: absolute;
+    top:  160px;
+    left: 265px;
+    
+
+}
+
+.imagem-raiko {
+    justify-content: space-between;
+    width: 190px;
+    height: 200px;
+    transition: 0.5s;
+    
+
+}
+
+.imagem-william {
+    justify-content: space-between;
+    width: 190px;
+    height: 200px;
+    transition: 0.5s;
+    
+
+}
+
+ h2 {
+  text-align: center;
+  top: -900;
+  left: 300px;
+  font-family: 'Adult_Swim';
+}
+
+.botao {
+  margin: 30px;
+  padding: 20px 15px;
+  text-decoration: none;
+  border-radius: 20px;
+  top: 905px;
+  justify-content: center;
+  color: antiquewhite;
+  background: #696262;
+  height: 20vh;
+  width: 10vw;
+  font-family: 'Adult_Swim';
+
+}
+
+.botao:active {
+    opacity: 0.6;
+}
+
+.botao2 {
+  margin: 30px;
+  padding: 20px 15px;
+  text-decoration: none;
+  border-radius: 20px;
+  top: 900px;
+  justify-content: center;
+  color: antiquewhite;
+  background: #696262;
+  height: 20vh;
+  width: 10vw;
+  font-family: 'Adult_Swim';
+
+}
+
+.troca-efeito {
+    opacity: 0;
+}
+
+audio {
+  width: 400px; /* Define a largura do player */
+  margin: 20px; /* Adiciona espaço ao redor */
+  position: fixed;
+  top: 30px;
+  z-index: 5;
+  
+  
+}
+
+audio::-webkit-media-controls-start { /* Estiliza o início do player (se usar o -webkit-media-controls-start) */
+  
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #8446ca; /* Fundo do painel */
+  color: rgb(33, 177, 187);
+  border-radius: 10px;
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: #602b9c;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  background-color: #8446ca;
+}
+
+.ImagemAnimada {
+      width: 95px;
+      height: 95px;
+      transition: transform 6s ease-in-out; 
+      
+      background-position: bottom center;
+      top: 3500px;
+      left: 95px;
+    }
+
+    .ImagemAnimada:hover {
+      transform: rotate(360deg); 
+    }
+
+  
+.caixa-rodape {
+  display: flex;
+  margin: 120px;
+  padding: 40px;
+  background: #202020;
+  color: #ffffff;
+  position: absolute;
+  z-index: 4;
+  height: 6vh;
+  width: 1200px;
+  top: 3600px;
+}
+
+.rodape-links {
+  color: #cecccc;
+  text-decoration: none;
+  gap: 100px;
+}
+
+ul {
+  display: table-caption;
+}
