@@ -21,18 +21,27 @@
 
 
 body {
-    background: #dfdce3;
+  display: flex;
+    /*background: #dfdce3; */
     color: #202020;
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
+    
+    background-image: linear-gradient(
+        rgb(255, 255, 255),
+        rgb(14, 14, 14)
+     );
 
+     
+    height: 500vh;
 }
 
 
 
 .caixa-principal {
     
+
     top: -100px;
     left: 320px;
 
@@ -48,11 +57,12 @@ body {
     border-style: solid;
     text-align: center;
     
-
+    
     background: rgba(115, 115, 119, 0.933);
     color: #202020;
     font-family: 'Adult_Swim';
-
+    
+    
     
 }
 
@@ -395,34 +405,8 @@ img {
     opacity: 0;
 }
 
-audio {
-  width: 400px; /* Define a largura do player */
-  margin: 20px; /* Adiciona espaço ao redor */
-  position: fixed;
-  top: 30px;
-  z-index: 5;
-  
-  
-}
 
-audio::-webkit-media-controls-start { /* Estiliza o início do player (se usar o -webkit-media-controls-start) */
-  
-}
 
-audio::-webkit-media-controls-panel {
-  background-color: #8446ca; /* Fundo do painel */
-  color: rgb(33, 177, 187);
-  border-radius: 10px;
-}
-
-audio::-webkit-media-controls-play-button {
-  background-color: #602b9c;
-  border-radius: 50%;
-}
-
-audio::-webkit-media-controls-volume-slider {
-  background-color: #8446ca;
-}
 
 .ImagemAnimada {
       width: 95px;
@@ -445,11 +429,12 @@ audio::-webkit-media-controls-volume-slider {
   padding: 40px;
   background: #202020;
   color: #ffffff;
-  position: absolute;
+  position: relative;
   z-index: 4;
   height: 6vh;
   width: 1200px;
   top: 3600px;
+  
 }
 
 .rodape-links {
@@ -460,4 +445,13 @@ audio::-webkit-media-controls-volume-slider {
 
 ul {
   display: table-caption;
+}
+
+footer {
+  display: flex;
+
+  background: #202020;
+  
+  padding: 50px;
+  margin: 0px;
 }
